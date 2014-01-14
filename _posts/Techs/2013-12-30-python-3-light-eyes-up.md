@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Python 3 眼前一亮
-category: 天光云影
+category: Techs
 tag: Python
 keywords: Python 3
 description:

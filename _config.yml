@@ -8,7 +8,7 @@ title: 半亩方塘
 locals:
   tags: 标签
   about: 关于
-active: 天光云影
+active: Techs
 subscribe_rss: /pages/atom.xml
 pygments: true
 markdown: redcarpet
