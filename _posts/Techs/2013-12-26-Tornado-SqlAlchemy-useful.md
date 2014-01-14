@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Tornado & SQLAlchemy组合用法
-category: Techs
-tag: Tornado,SQLAlchemy
+category: 技术
+tags: Tornado, SQLAlchemy
 keywords: Tornado,SQLAlchemy
 description: Tornado & SQLAlchemy组合用法
 ---

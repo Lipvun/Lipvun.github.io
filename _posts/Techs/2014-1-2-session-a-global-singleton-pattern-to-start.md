@@ -1,11 +1,13 @@
 ---
 layout: post
 title: 由session全局单例模式说起
-category: Techs
-tag: Python
-keywords: Python,单例
+category: 技术
+tags: Python
+keywords: Python, 单例
 description: 由session全局单例模式说起
 ---
+
+## 由session全局单例模式说起
 
 ``` python
 class Backend(object):
@@ -27,9 +29,6 @@ class Backend(object):
     def get_session(self):
         return self._session()
 ```
-
-
-## 由session全局单例模式说起
 
 把session实例封装在Backend类中，在实际应用中使用方法是，通过类的静态方法instance()创建唯一实例，再调用get_session方法获取唯一session
 

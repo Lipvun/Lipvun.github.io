@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Webhook for pelican by Tornado
-category: Techs
-tag: Tornado,Pelican,Webhook
+category: 技术
+tags: Tornado, Pelican, Webhook
 keywords: Tornado,Pelican,Webhook
 description: Webhook for pelican by Tornado
 ---

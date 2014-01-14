@@ -1,4 +1,6 @@
-permalink: /:categories/:title.html
+safe: true
+auto: true
+permalink: /:title.html
 paginate: 10
 author:
   name: Lipvun
@@ -8,7 +10,7 @@ title: 半亩方塘
 locals:
   tags: 标签
   about: 关于
-active: Techs
+active: 技术
 subscribe_rss: /pages/atom.xml
 pygments: true
 markdown: redcarpet
