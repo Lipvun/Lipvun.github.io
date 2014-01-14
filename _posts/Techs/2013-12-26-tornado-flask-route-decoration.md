@@ -2,8 +2,8 @@
 layout: post
 title: Tornado类flask路由映射装饰器
 category: 技术
-tags: Tornado, Flask
-keywords: Tornado, Flask
+tags: [Tornado, Flask]
+keywords: [Tornado, Flask]
 description: Tornado类flask路由映射装饰器
 ---
 
