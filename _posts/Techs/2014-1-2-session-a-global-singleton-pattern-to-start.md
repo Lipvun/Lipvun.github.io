@@ -1,10 +1,10 @@
 ---
 layout: post
 title: 由session全局单例模式说起
-category: Tech
+category: 天光云影
 tag: Python
 keywords: Python, 单例
-description:
+description: 由session全局单例模式说起
 ---
 
 ``` python
