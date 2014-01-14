@@ -1,0 +1,14 @@
+permalink: /:categories/:title.html
+paginate: 10
+author:
+  name: Lipvun
+  email: Lipvun@live.com
+  link: http://lipvun.com
+title: 半亩方塘
+locals:
+  tags: 标签
+  about: 关于
+active: 技术
+subscribe_rss: /pages/atom.xml
+pygments: true
+markdown: redcarpet

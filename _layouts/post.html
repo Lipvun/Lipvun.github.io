@@ -1,0 +1,26 @@
+---
+layout: base
+---
+<div class="row">
+  <div class="col-md-12 aside3-title">
+    <br>
+    <h2 id="#identifier">{{ page.title }}</h2>
+    {{ page.date | date:"%Y年%m月%d日" }}
+  </div>
+  <div class="col-md-12 aside3-content">
+    <div class="pull-right panel panel-success">
+      <div class="panel-heading">
+        <h4 class="panel-title"><a data-toggle="collapse" data-toggle="collapse" href="#content-table">目录</a></h4>
+      </div>
+      <div id="content-table" class="panel-collapse collapse">
+        <div class="panel-body" id="nav"></div>
+      </div>
+    </div>
+    <div id="content">
+      {{ content }}
+    </div>
+    <hr>
+    {% include disqus.html %}
+  </div>
+</div>
+
