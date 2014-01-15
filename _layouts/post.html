@@ -7,6 +7,19 @@ layout: base
   {{ content }}
 </article> <!-- end #post__content -->
 
+<div class="prev_and_next">
+  {% if page.previous %}
+  <div><strong>上一篇： <a href="{{ site.url }}{{ page.previous.url }}" title="{{ page.previous.title }}">{{ page.previous.title }}</a></strong></div>
+  {% else %}
+  <div><strong>下一篇： 这个真没有！！！</strong></div>
+  {% endif %}
+  {% if page.next %}
+  <div><strong>上一篇： <a href="{{ site.url }}{{ page.next.url }}" title="{{ page.next.title }}">{{ page.next.title }}</a></strong></div>
+  {% else %}
+  <div><strong>下一篇： 这个真没有！！！</strong></div>
+  {% endif %}
+</div>
+
 <div id="post__share">
   <a id="icon-twitter" class="fontello" href="https://twitter.com/intent/tweet?url={{ site.url }}{{ page.url }}&text={{ page.title }}" target="_blank"></a>
   <a id="icon-cc" class="fontello" href="http://creativecommons.org/licenses/by-nc-sa/3.0" target="_blank"></a>

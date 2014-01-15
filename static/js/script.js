@@ -6,7 +6,7 @@
 \*---------------------------------*/
 
 // Detect window size, if less than 1280px add class 'mobile' to sidebar therefore it will be auto hide when trigger the pjax request in small screen devices.
-if ($(window).width() <= 1280) {
+if ($(window).width() <= 960) {
   $('#sidebar').addClass('mobile')
 }
 
