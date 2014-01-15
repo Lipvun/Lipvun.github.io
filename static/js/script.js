@@ -13,7 +13,7 @@ if ($(window).width() <= 960) {
 // Variables
     tag1       = $('.techs'),
     tag2       = $('.engineer'),
-    tag3       = $('.life'),
+    tag3       = $('.life');
 var sidebar    = $('#sidebar'),
     container  = $('#post'),
     content    = $('#pjax'),
