@@ -1,0 +1,30 @@
+<aside id="sidebar">
+  <nav id="tags">
+    <a href="/index.html" id="avatar"></a>
+
+    <ul id="tags__ul">
+      <li id="js-label1" class="tags__li tags-btn active">技术</li>
+      <li id="js-label2" class="tags__li tags-btn">工程</li>
+      <li id="js-label2" class="tags__li tags-btn">生活</li>
+    </ul>
+
+    <div id="tags__bottom">
+      <a href="mailto:lipvun#live.com" id="icon-email" class="tags-btn fontello"></a>
+      <a href="/rss.xml" id="icon-feed" class="tags-btn fontello"></a>
+    </div>
+  </nav> <!-- end #tags -->
+
+  <div id="posts-list">
+    <form action="" id="search-form">
+      <a href="/index.html" id="mobile-avatar"></a>
+      <!-- NOTE: input field is disabled by default -->
+      <input id="search-input" type="text" placeholder="Search..." disabled >
+    </form>
+
+    <nav id="pl__container">
+    {% for post in site.posts %}
+      <a class="{{ post.categories }} pl__all" href="{{ post.url }}"><span class="pl__circle"></span><span class="pl__title">{{ post.title }}</span><span class="pl__date">{{ post.date | date: "%b %Y" }}</span></a>
+    {% endfor %}
+    </nav>
+  </div> <!-- end #posts-list -->
+</aside> <!-- end #sidebar -->

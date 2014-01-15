@@ -3,20 +3,23 @@
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# blog: http://ogp.me/ns/blog#">
   {% include header.html %}
 </head>
-<body itemscope itemtype="http://schema.org/CreativeWork">
-  <div class="container">
-    <div class="row">
-      {% include navside.html %}
-      <div class="col-md-8 col-lg-8 col-sm-12 col-xs-12 aside3">
-        <div id="container">
-          <div id="pjax">
-            {{ content }}
-          </div>
+  <body itemscope itemtype="http://schema.org/CreativeWork">
+    {% include sidebar.html %}
+
+    <div id="post">
+      <div id="pjax">
+        {{ content }}
+      </div> <!-- end #pjax -->
+
+      <div id="post__toc-trigger">
+        <div id="post__toc">
+          <span id="post__toc-title">Table of Contents</span>
+          <ul id="post__toc-ul"></ul>
         </div>
       </div>
-    </div>
-  </div>
-  {% include footer.html %}
-  {% include googleanalytics.html %}
-</body>
+    </div> <!-- end #post -->
+
+    {% include footer.html %}
+    {% include googleanalytics.html %}
+  </body>
 </html>

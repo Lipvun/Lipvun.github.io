@@ -1,38 +1,19 @@
 ---
 layout: base
 ---
-<div class="row">
-  <div class="col-md-12 aside3-title">
-    <br>
-    <h2 id="#identifier">{{ page.title }}</h2>
-    {{ page.date | date:"%Y年%m月%d日" }}
-  </div>
-  <div class="col-md-12 aside3-content">
-    <div class="pull-right panel panel-success">
-      <div class="panel-heading">
-        <h4 class="panel-title"><a data-toggle="collapse" data-toggle="collapse" href="#content-table">目录</a></h4>
-      </div>
-      <div id="content-table" class="panel-collapse collapse">
-        <div class="panel-body" id="nav"></div>
-      </div>
-    </div>
-    <div id="content">
-      {{ content }}
-    </div>
-    <div class="prev_and_next">
-      {% if page.previous %}
-      <div><strong>上一篇： <a href="{{ site.url }}{{ page.previous.url }}" title="{{ page.previous.title }}">{{ page.previous.title }}</a></strong></div>
-      {% else %}
-      <div><strong>下一篇： 这个真没有！！！</strong></div>
-      {% endif %}
-      {% if page.next %}
-      <div><strong>上一篇： <a href="{{ site.url }}{{ page.next.url }}" title="{{ page.next.title }}">{{ page.next.title }}</a></strong></div>
-      {% else %}
-      <div><strong>下一篇： 这个真没有！！！</strong></div>
-      {% endif %}
-    </div>
-    <hr>
-    {% include disqus.html %}
-  </div>
-</div>
 
+<article id="post__content">
+  <h1 id="post__title" data-identifier="{{ page.date | date: "%Y%m%d" }}">{{ page.title }}</h1>
+  {{ content }}
+</article> <!-- end #post__content -->
+
+<div id="post__share">
+  <a id="icon-twitter" class="fontello" href="https://twitter.com/intent/tweet?url={{ site.url }}{{ page.url }}&text={{ page.title }}" target="_blank"></a>
+  <a id="icon-cc" class="fontello" href="http://creativecommons.org/licenses/by-nc-sa/3.0" target="_blank"></a>
+  <a id="icon-weibo" class="fontello" href="http://v.t.sina.com.cn/share/share.php?url={{ site.url }}{{ page.url }}&title={{ page.title }}" target="_blank"></a>
+</div> <!-- end #post__share -->
+
+<div id="disqus_thread">
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com" class="dsq-brlink" target="_blank">评论加载中……</a>
+</div> <!-- end #disqus_thread -->
