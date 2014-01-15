@@ -26,7 +26,7 @@ var timer = setTimeout(function(){
     $(this).addClass('fullscreen').dequeue();
   });
 
-}, 3000)
+}, 1000)
 
 // Tags switcher
 var clickHandler = function(k) {
