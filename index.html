@@ -6,9 +6,6 @@ title: 首页
 {% for post in site.posts limit:10 %}
   <article id="post__content">
     <h1 id="post__title"><a href="{{ site.url }}{{post.url}}" title="{{ post.title }}">{{ post.title }}</a></h1>
-    <p>
-      {{ post.content  | | split:'<!--more-->' | first | strip_html }}
-      <a class="more" href="{{ site.url }}{{ post.url }}">[继续阅读]</a>
-    </p>
+      {{ post.content }}
   </article> <!-- end #post__content -->
 {% endfor %}
