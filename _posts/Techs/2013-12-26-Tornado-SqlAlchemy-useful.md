@@ -3,11 +3,9 @@ layout: post
 title: Tornado & SQLAlchemy组合用法
 category: Techs
 tags: [Tornado, SQLAlchemy]
-keywords: [Tornado, SQLAlchemy]
+keywords: Tornado, SQLAlchemy
 description: Tornado & SQLAlchemy组合用法
 ---
-
-### Tornado & SQLAlchemy组合用法
 
 ``` python
 #!/usr/bin/env python

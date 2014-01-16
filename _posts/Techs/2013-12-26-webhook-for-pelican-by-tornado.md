@@ -3,11 +3,9 @@ layout: post
 title: Webhook for pelican by Tornado
 category: Techs
 tags: [Tornado, Pelican, Webhook]
-keywords: [Tornado,Pelican,Webhook]
+keywords: Tornado,Pelican,Webhook
 description: Webhook for pelican by Tornado
 ---
-
-### Webhook for pelican by Tornado
 
 ``` python
 #!/usr/bin/env python

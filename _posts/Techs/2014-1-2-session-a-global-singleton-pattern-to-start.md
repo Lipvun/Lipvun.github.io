@@ -3,11 +3,9 @@ layout: post
 title: 由session全局单例模式说起
 category: Techs
 tags: [Python,]
-keywords: [Python, 单例]
+keywords: Python, 单例
 description: 由session全局单例模式说起
 ---
-
-## 由session全局单例模式说起
 
 ``` python
 class Backend(object):
