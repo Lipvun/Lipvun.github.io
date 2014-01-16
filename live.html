@@ -5,7 +5,64 @@ title: 网络电视
 
 <article id="post__content">
   <h1 id="post__title" data-identifier="1314">{{ post.title }}</h1>
-  <iframe height="560" frameborder="0" width="100%" scrolling="no" marginheight="0" marginwidth="0" src="http://live.64ma.com/tv/live.html"></iframe>
+
+    <style type="text/css">
+    <!--
+    body {overflow:hidden;background-color: #000000}
+    a {color: #fff;text-decoration: none;text-align: center;outline: none;}
+    a:hover {color:#FFFFFF;text-decoration: none;}
+    .close {MARGIN: 0px}
+    .close a {BACKGROUND: url(http://live.64ma.com/tv/images/c.gif) no-repeat;BORDER-TOP-WIDTH: 0px; BACKGROUND-POSITION: 0px 0px; DISPLAY: block; BORDER-LEFT-WIDTH: 0px; FLOAT: right; BORDER-BOTTOM-WIDTH: 0px; WIDTH: 9px; LINE-HEIGHT: 58px; HEIGHT: 58px; TEXT-ALIGN: center; BORDER-RIGHT-WIDTH: 0px}
+    .close a:hover {BACKGROUND-POSITION: -9px 0px;TEXT-DECORATION: none}
+    .open {MARGIN: 0px}
+    .open a {BACKGROUND: url(http://live.64ma.com/tv/images/o.gif) no-repeat;BORDER-TOP-WIDTH: 0px; BACKGROUND-POSITION: 0px 0px; DISPLAY: block; BORDER-LEFT-WIDTH: 0px; FLOAT: right; BORDER-BOTTOM-WIDTH: 0px; WIDTH: 9px; LINE-HEIGHT: 58px; HEIGHT: 58px; TEXT-ALIGN: center; BORDER-RIGHT-WIDTH: 0px}
+    .open a:hover {BACKGROUND-POSITION: -9px 0px;TEXT-DECORATION: none}
+    #welcome a{color:red}
+    -->
+    </style>
+    <script language="JavaScript">
+    function killErrors() {
+        return true;
+    }
+    window.onerror = killErrors;
+    function showsubmenu(clickis){
+        whichEl = eval("tv_list");
+        if (whichEl.style.display == "none") {
+            eval("tv_list.style.display=\"\";");
+            idFlag.innerHTML = "<div class='close'><a href='#' hidefocus='true' title='按此切换到精简模式'></a></div>";
+            if(clickis==0) eval("sh.style.display=\"\";");
+            try{
+                if(window.frames["play"].$id("lbottom").style.display == "none") window.frames["play"].showLeftMenu("2");
+                window.frames["play"].yime()
+            }catch(E){}
+        }
+        else {
+            eval("tv_list.style.display=\"none\";");
+            idFlag.innerHTML = "<div class='open'><a href='#' hidefocus='true' title='按此切换到正常模式'></a>";
+            if(clickis==0) eval("sh.style.display=\"none\";");
+            try{
+                if(window.frames["play"].$id("lbottom").style.display != "none") window.frames["play"].showLeftMenu("2");
+                window.frames["play"].yime()
+            }catch(E){}
+        }
+    }
+    function keyDown(){
+        var e = event?event:window.event;
+        try{window.frames['tvl'].keyDown(e.keyCode)}catch(E){}
+    }
+
+    var timer = setTimeout("showsubmenu(1)", 1000)
+
+    </script>
+
+    <table width="100%" height="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+    <td><iframe id="play" name="play" frameborder="0" src="http://live.64ma.com/tv/tv.asp?pid=cctv5&sid=&swd="  width="100%" height="100%" SCROLLING="NO" border="0" allowtransparency="true"></iframe></td>
+    <td id="sh" width="9" bgcolor="#171a1d" style="cursor:hand" onClick="showsubmenu(1)"><span id="idFlag"><div class="close" id="sh"><a href="#" hidefocus="true" title="按此切换到精简模式"></a></div></span></td>
+    <td width="210" id="tv_list"><iframe id="tvl" name="tvl" frameborder="0" src="http://live.64ma.com/tv/list.asp?tid=&fid=&swd="  width="100%" height="100%" SCROLLING="AUTO" border="0" target="play" allowtransparency="true"></iframe></td>
+    </tr>
+    </table>
+
 </article> <!-- end #post__content -->
 
 <div id="post__share">
