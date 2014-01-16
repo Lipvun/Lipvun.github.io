@@ -12,6 +12,7 @@ description: PPTP VPN连接时出现619错误
 不能建立VPN连接，出现619错误，是由于相关设备对GRE协议（通用路由封装协议）和TCP 1723端口支持的问题引起的。
 
 1.请检查您自己机器及家庭网关上的防火墙设置是否支持GRE协议（通用路由封装协 议）及开放对外访问TCP 1723端口；或先将防火墙关闭进行测试，保证您的机器可以 使用GRE协议及TCP 1723端口对外进行访问；家庭网关是否支持GRE，应核实家庭网关 用户手册；重启家庭网关设备可以帮助解决家庭网关设备的临时性故障；
+
 2.向您的ISP查询是否开放GRE协议及对外访问的TCP 1723端口；
 
 服务器端日志:
@@ -46,8 +47,11 @@ description: PPTP VPN连接时出现619错误
 ```
 
 1.Make sure you paste the most up-to-date password without mistake;
+
 2.If you have firewall software installed, make sure TCP port 1723 is opened;
+
 3.Check wireless router firewall settings, make sure PPTP VPN Pass Through is enabled;
+
 4.Check your local ISP that if the GRE protocol on port 47 is opened;
 
 

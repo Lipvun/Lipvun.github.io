@@ -7,7 +7,7 @@ keywords: shell
 description: 打包并加密网站文件脚本
 ---
 
-``` shell
+```
 #!/bin/bash
 
 #设置部分
