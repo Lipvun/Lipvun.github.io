@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 隐藏服务器程序版本号nginx & varnish & php-fpm & apache2
+title: 隐藏服务器程序版本号
 category: Techs
 tags: [nginx, varnish, php-fpm, apache2]
 keywords: nginx, varnish, php-fpm, apache2
