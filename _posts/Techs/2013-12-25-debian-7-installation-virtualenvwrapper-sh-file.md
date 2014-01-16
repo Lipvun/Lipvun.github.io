@@ -30,7 +30,7 @@ virtualenvwrapper not found
 …
 ```
 
-或在`http://packages.debian.org/zh-cn/wheezy/all/virtualenvwrapper/filelist`中找到`virtualenvwrapper`包中的文件无`virtualenvwrapper.sh`
+或在http://packages.debian.org/zh-cn/wheezy/all/virtualenvwrapper/filelist中找到virtualenvwrapper包中的文件无virtualenvwrapper.sh
 
 由此可见Debian 7中virtualenvwrapper.sh可能已改名并放在其它路径。
 
@@ -64,4 +64,3 @@ Debian 7下如使用apt-get 安装virtualenvwrapper后的下一步由：
 改成：
 
     source /etc/bash_completion.d/virtualenvwrapper
-
