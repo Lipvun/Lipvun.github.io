@@ -7,11 +7,4 @@ keywords: JS, CSS3, HTML5
 description: 宿舍关灯后看书效果
 ---
 
-### 纯数字
-
-<p data-height="268" data-theme-id="0" data-slug-hash="nyJgL" data-default-tab="result" class='codepen'></p>
-
-
-### 有字母和其它字符
-
-<p data-height="268" data-theme-id="0" data-slug-hash="xtprs" data-default-tab="result" class='codepen'></p>
+<p data-height="560" data-theme-id="0" data-slug-hash="nyJgL" data-default-tab="result" class='codepen'></p>
